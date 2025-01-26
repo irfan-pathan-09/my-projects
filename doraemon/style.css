@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 500px;
+    height: 100vh;
+    border: 1px dashed black;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF3B0;
+}
+.uper-body{
+    position: relative;
+    top:30px;
+    height: 300px;
+    box-shadow: 0px 0px 20px black  ;
+    width: 250px;
+    background-color:#71a1d4;
+    border-top-left-radius:50%;
+    border-top-right-radius:50%;
+    border-bottom-left-radius:40%;
+    border-bottom-right-radius:40%;
+    border: 1px solid black;
+    z-index: 01;
+}
+.lower-body{
+    height: 200px;
+    width: 230px;
+    background-color:#71a1d4;
+    border-radius: 40px;
+    /* box-shadow: 0px -2px 20px black  ; */
+    /* border: 1px solid black; */
+    border-top: transparent;
+    border-bottom: transparent;
+    z-index: 1;
+}
+.hand{
+    width: 50px;
+    height: 150px;
+    background-color:#71a1d4 ;
+    border-top: transparent;
+    border-left: transparent;
+    border-bottom: transparent;
+    border-radius: 40px;
+}
+.handR{
+    display: block;
+    position: relative;
+    left:215px;
+    top:-14px;
+    transform: rotate(-30deg);
+}
+
+.handL{
+    display: block;
+    position: relative;
+    right:40px;
+    bottom:345px;
+    transform: rotate(30deg);
+    z-index: -1;
+}
+.red-band{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    left:5px;
+    height: 20px;
+    width: 220px;
+    background-color: #b13f54;
+    border-radius: 40px;
+}
+.bell{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: #ddb551;
+}
+.bell-in{
+    position: relative;
+    top:60%;
+    left:1px;
+    width: 3px;
+    height: 10px;
+    background-color: #706948;
+}
+.bell-in-circle{
+    position: absolute;
+    top:50%;
+    width: 5px;
+    height: 5px;
+    background-color: #706948;
+    border-radius: 50%;
+
+}
+.leg-box{
+    height: 120px;
+    width: 230px;
+    z-index: 0;
+}
+.leg{
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0px 0px 10px black  ;
+    display: block;
+    height: 100%;
+    width: 100px;
+    background-color: #71a1d4;
+
+}
+.legL{
+    top: -20px;
+    left:10px;
+}
+.legR{
+    right: -120px;
+    top: -120px;
+}
+.punch{
+    height: 50px;
+    width: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;    
+    bottom:0px;
+
+}
+.feet{
+    position: relative;
+    right: -5px;
+    height: 20px;
+    width: 110px;
+    background-color: #fff;
+    border-radius: 7px;
+    position: absolute;    
+    bottom:0px;
+
+}
+.white-body{
+    display: block;
+    position: relative;
+    bottom:170px;
+    left:25px;
+    width: 180px;
+    height: 180px;
+    background-color: #fff;
+    border-bottom-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+    border-top-right-radius: 70px;
+    border-top-left-radius: 70px;
+}
+.bag{
+    position: absolute;
+    height: 60px;
+    width: calc(100% - 70px);
+    border: 1.1px solid black;
+    left:35px;
+    bottom: 40px;
+    border-radius: 150px 150px 0 0;
+    transform: rotateX(180deg);
+    /* border-right: transparent; */
+}
+.face{
+    position: relative;
+    left: 20px;
+    top:50px;
+    display: block;
+    width:calc(100% - 40px);
+	height: 200px;
+    background-color: #fff;
+	border-radius: 45%;
+}
+.eye-box{
+    padding: 0;
+    gap: 0px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 20px;
+    top: -20px;
+    width: calc(100% - 40px);
+    z-index: 3;
+    background-color: transparent;
+}
+.eye{
+    margin: 0px;
+    border: 1px solid black;
+    height: 70px;
+    width: 50px;
+    border-radius: 45%;
+    background-color: #fff;
+
+}
+.eyeBall{
+    width: 3px;
+    border: 4px solid black;
+    border-radius: 50%;
+    height: 8px;
+    position: relative;
+
+}
+.eye-ballL{
+    left: 70%;
+    top:50%;
+}
+.eye-ballR{
+    left:10%;
+    top:50%;
+}
+.lip{
+    position: relative;
+    top:-5%;
+    left:20px;
+    width: 154px;;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 50px;
+    border-top: transparent;
+    border-right:transparent ;
+    border-bottom-right-radius: 0%;
+}
+.nose{
+    position: absolute;
+    top: 80%;
+    left: 45%;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: rgb(255, 0, 0);
+}
+.nose-dot{
+    position: relative;
+    top: 20%;
+    left: 20%;
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.mouth{
+    position: relative;
+    top:-5%;
+    left: 16%;
+    border: 1px solid black;
+    border-radius: 150px 150px 0 0;
+    transform: rotateX(180deg);
+    height: 60px;
+    width: calc(100% - 70px);
+    background-color: red;
+    overflow: hidden;
+}
+.tounge{
+    position: relative;
+    height: 60px;
+    width: calc(100% - 30px);
+    border: 1px solid black;
+    border-radius: 150px 150px 0 0;
+    transform: rotateX(180deg);
+    background-color:rgb(160, 11, 11);
+    top:-50%;
+    left: 10px;
+}
+.middle-line{
+    position: absolute;
+    left: calc(50% );
+    top:10%;
+    height: 100px;
+    width: 0;
+    border: 1px solid black;
+}
+.muche{
+    width: 60px;
+    border: 1px solid black;
+}
+.muche-R{
+    position: absolute;
+    left:50%;
+    transform: rotate(-14deg) ;
+}
+.muche-R2{
+    position:relative;
+    top: 10px;
+    left:50%;
+    transform: rotate(-14deg) ;
+}
+.muche-R3{
+    position:relative;
+    top: -12px;
+    left:50%;
+    transform: rotate(-14deg) ;
+}
+.muche-L{
+    position: relative;
+    left:45px;
+    top: -3px;
+    transform: rotate(14deg) ;
+}
+.muche-L2{
+    position:relative;
+    top: 6px;
+    width: 60px;
+    left:45px;
+    transform: rotate(14deg) ;
+}
+.muche-L3{
+    position:relative;
+    left:45px;
+    top: -16px;
+    transform: rotate(14deg) ;
+}
