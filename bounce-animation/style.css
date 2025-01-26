@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.big-box{
+    border: 2px solid black;
+    background-color: cadetblue;
+    width: 100vw;
+    height: 80vh;
+    display:grid ;
+    display: flex;
+    align-items:end ;
+}
+.ball{
+    border: 1px dashed black;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: blue;
+    animation: uper 0.5s ease-out 1s infinite alternate,
+               sidha 5s linear 1s infinite ;
+}
+
+
+@keyframes uper {
+    from{
+    }
+    to{
+        transform: translateY(-300px);
+    }
+}
+
+@keyframes sidha {
+    from{
+
+    }
+    to{
+        transform: translate(100vw);
+    }
+}
